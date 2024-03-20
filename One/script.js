@@ -125,6 +125,7 @@ class MixOrMatch {
             let randIndex = Math.floor(Math.random() * (i + 1));
             cardsArray[randIndex].style.order = i;
             cardsArray[i].style.order = randIndex;
+        }
     }
     getCardType(card) {
         return card.getElementsByClassName('card-value')[0].src;
@@ -158,3 +159,6 @@ function ready() {
         });
     });
 }
+
+   
+
